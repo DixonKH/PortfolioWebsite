@@ -15,7 +15,7 @@ export default function Footer() {
             <span className="p-2 mask-l-from-40% mr-2 px-3.5 bg-primary text-white font-bold text-2xl rounded-md">
               N
             </span>
-            NeonCoding
+            <Link href="/">NeonCoding</Link>
           </div>
           <div className="text-lg">
             Building Digital Experiences with passion and precision. Let's
