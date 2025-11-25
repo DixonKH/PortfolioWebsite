@@ -42,7 +42,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-}
+} 
 
 :root {
   --background: hsl(260 60% 99%);
@@ -53,7 +53,7 @@
   --popover-foreground: hsl(260 50% 12%);
 
   /* Main brand color → that gorgeous purple-indigo gradient */
-  --primary: hsl(242 84% 67%);
+  --primary: hsl(241 90% 68%);
   --primary-foreground: hsl(0 0% 100%);
 
   --secondary: hsl(260 40% 96%);
@@ -86,7 +86,7 @@
   --popover-foreground: hsl(260 40% 94%);
 
   /* Same beautiful purple stays in dark mode (slightly brighter so it pops) */
-  --primary: hsl(242 84% 67%); /* brighter purple on dark bg */
+  --primary: hsl(241 90% 68%); /* brighter purple on dark bg */
   --primary-foreground: hsl(260 20% 98%);
 
   --secondary: hsl(260 40% 16%);
@@ -113,7 +113,4 @@
   body {
     @apply bg-background text-foreground;
   }
-  .navbar {
-  @apply border-b border-border/40 bg-[--navbar-background]/95 backdrop-blur;
-}
 }
