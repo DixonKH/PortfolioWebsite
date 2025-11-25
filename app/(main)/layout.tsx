@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dixon - Full Stack Developer",
+  title: "NeonCoding",
   description: "Next.js 14 + Typescript + Tailwind",
 };
 

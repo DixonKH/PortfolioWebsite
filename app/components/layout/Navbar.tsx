@@ -18,13 +18,13 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <div className="dark:bg-black bg-white stiky w-full p-8 flex justify-between items-center shadow-md lg:px-24 py-6">
-      <div className="text-primary lg:text-3xl text-xl font-bold flex items-center">
-        <span className="p-2 mask-l-from-40% mr-2 px-3.5 bg-primary text-white font-bold lg:text-2xl  rounded-md">
+      <div className="text-primary lg:text-3xl text-2xl font-bold flex items-center space-x-2">
+        <span className="p-2 mask-l-from-40% mr-2 px-3.5 bg-primary text-white font-bold text-2xl rounded-md">
           N
         </span>
         <Link href="/">NeonCoding</Link>
       </div>
-      <nav className="flex items-center space-x-4 lg:text-2xl gap-4">
+      <nav className="flex items-center lg:text-2xl gap-4">
         <div className="hidden lg:flex space-x-6 lg:text-lg md:text-sm font-medium">
           {NavLinks.map((link) => {
             const isActive =
@@ -72,15 +72,14 @@ export default function Navbar() {
             );
           })}
           <div>
-            {" "}
             <Link
-              className="bg-primary text-xl rounded-full font-medium px-6 py-3"
+              className="bg-primary text-primary-foreground text-xl rounded-full font-medium px-6 py-3"
               href="/contact"
             >
               Contact
             </Link>
           </div>
-          <div className="text-primary lg:text-3xl text-xl font-bold flex items-center absolute top-8 left-8">
+          <div className="text-primary lg:text-3xl text-2xl font-bold flex items-center absolute top-8 left-8">
             <span className="p-2 mask-l-from-40% mr-2 px-3.5 bg-primary text-white font-bold lg:text-2xl  rounded-md">
               N
             </span>
