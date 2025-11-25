@@ -18,13 +18,13 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <div className="dark:bg-black bg-white stiky w-full p-8 flex justify-between items-center shadow-md lg:px-24 py-6">
-      <div className="text-primary lg:text-3xl text-2xl font-bold flex items-center space-x-2">
+      <div className="text-primary lg:text-2xl text-xl font-bold flex items-center">
         <span className="p-2 mask-l-from-40% mr-2 px-3.5 bg-primary text-white font-bold text-2xl rounded-md">
           N
         </span>
         <Link href="/">NeonCoding</Link>
       </div>
-      <nav className="flex items-center lg:text-2xl gap-4">
+      <nav className="flex items-center lg:text-xl gap-4">
         <div className="hidden lg:flex space-x-6 lg:text-lg md:text-sm font-medium">
           {NavLinks.map((link) => {
             const isActive =
@@ -35,7 +35,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={
-                  isActive ? "font-bold text-primary text-2xl" : "text-2xl"
+                  isActive ? "font-bold text-primary" : ""
                 }
               >
                 {link.name}
@@ -44,7 +44,7 @@ export default function Navbar() {
           })}
         </div>
         <ToggleTheme />
-        <div className="hidden lg:flex bg-primary text-primary-foreground rounded-full font-medium px-6 py-3">
+        <div className="hidden lg:flex bg-primary text-primary-foreground rounded-full font-medium px-5 py-2">
           <Link href="/contact">Contact</Link>
         </div>
         <button className="flex lg:hidden" onClick={() => setIsOpen(true)}>
@@ -63,7 +63,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={
-                  isActive ? "font-bold text-primary text-2xl" : "text-2xl"
+                  isActive ? "font-bold text-primary" : ""
                 }
                 onClick={() => setIsOpen(false)}
               >

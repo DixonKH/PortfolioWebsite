@@ -16,16 +16,16 @@ export default function Hero() {
         <div className="text-primary font-bold text-lg border min-w-60 text-center rounded-full p-2 px-4 shadow-indigo-500/50 shadow-xl/30">
           Full Stack Developer
         </div>
-        <div className="md:text-8xl text-5xl font-bold max-w-3xl text-center lg:text-left">
+        <div className="md:text-6xl text-4xl font-bold max-w-3xl text-center lg:text-left">
           Building Digital <span className="text-primary">Experiences</span>
         </div>
-        <div className="md:text-2xl text-lg max-w-2xl min-w-80 text-secondary-foreground text-center lg:text-left mt-5">
+        <div className="md:text-xl text-md max-w-2xl min-w-80 dark:text-gray-400 text-center lg:text-left mt-5">
           +3 years of craftting exeptional web and mobile applications with
           modern technologies and best practices.
         </div>
         <div className="mt-6 flex flex-col lg:flex-row gap-6">
           <Link
-            className="flex items-center gap-2 bg-primary text-primary-foreground text-lg rounded-full font-medium min-w-50 px-6 py-3"
+            className="flex items-center justify-center gap-2 bg-primary text-primary-foreground rounded-full font-medium min-w-45"
             href="/projects"
           >
             View My Work
@@ -34,7 +34,7 @@ export default function Hero() {
             </span>
           </Link>
           <Link
-            className="flex items-center dark:bg-gray-900 backdrop-blur-2xl gap-2 border text-lg rounded-full font-medium min-w-50 px-7 py-4 shadow-indigo-500/50 shadow-xl/30"
+            className="flex items-center justify-center dark:bg-gray-900 gap-2 border rounded-full font-medium min-w-50 py-4 shadow-indigo-500/50 shadow-xl/30"
             href="/contact"
           >
             Contact Me
@@ -82,12 +82,12 @@ export default function Hero() {
           </div>
           <div className="w-full flex justify-between mt-4 text-xl font-medium gap-6">
             <div className="w-1/2 h-30 border border-primary rounded-2xl p-4">
-                <div className="flex justify-between items-center text-xl text-gray-500">Projects<span className="text-primary"><CodeXml size={30} /></span></div>
-                <div className="text-5xl font-black mt-2">20+</div>
+                <div className="flex justify-between items-center text-lg text-gray-500">Projects<span className="text-primary"><CodeXml size={26} /></span></div>
+                <div className="text-4xl font-black mt-2">20+</div>
             </div>
             <div className="w-1/2 h-30 border border-primary rounded-2xl p-4">
-                <div className="flex justify-between items-center text-xl text-gray-500">Cliets<span className="text-primary"><Users size={30} /></span></div>
-                <div className="text-5xl font-black mt-2">10+</div>
+                <div className="flex justify-between items-center text-lg text-gray-500">Cliets<span className="text-primary"><Users size={24} /></span></div>
+                <div className="text-4xl font-black mt-2">10+</div>
             </div>
           </div>
         </div>
