@@ -7,7 +7,7 @@ export default function ToggleTheme() {
     const {theme, setTheme} = useTheme();
     return (
         <div>
-            <button className='rounded-full' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+            <button className='rounded-full p-1' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
                 {theme === 'dark' ? <SunMedium /> : <Moon />}
             </button>
         </div>
