@@ -71,7 +71,21 @@ export default function Navbar() {
               </Link>
             );
           })}
-         <div> <Link className="bg-primary text-xl rounded-full font-medium px-6 py-3" href="/contact">Contact</Link></div>
+          <div>
+            {" "}
+            <Link
+              className="bg-primary text-xl rounded-full font-medium px-6 py-3"
+              href="/contact"
+            >
+              Contact
+            </Link>
+          </div>
+          <div className="text-primary lg:text-3xl text-xl font-bold flex items-center absolute top-8 left-8">
+            <span className="p-2 mask-l-from-40% mr-2 px-3.5 bg-primary text-white font-bold lg:text-2xl  rounded-md">
+              N
+            </span>
+            <Link href="/">NeonCoding</Link>
+          </div>
           <button
             className="absolute top-8 right-8 text-3xl"
             onClick={() => setIsOpen(false)}
