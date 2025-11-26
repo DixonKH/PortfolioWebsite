@@ -17,7 +17,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <div className="dark:bg-black bg-white stiky w-full p-8 flex justify-between items-center shadow-md lg:px-24 py-6">
+    <div className="dark:bg-black bg-white fixed top-0 right-0 left-0 z-999 w-full p-8 flex justify-between items-center shadow-md lg:px-24 py-6">
       <div className="text-primary lg:text-2xl text-xl font-bold flex items-center">
         <span className="p-2 mask-l-from-40% mr-2 px-3.5 bg-primary text-white font-bold text-2xl rounded-md">
           N

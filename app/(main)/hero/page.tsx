@@ -12,7 +12,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="w-full flex flex-col lg:flex-row justify-between items-center">
-      <div className="w-1/2 flex flex-col justify-between items-center lg:items-start gap-4">
+      <div className="lg:w-1/2 flex flex-col justify-between items-center lg:items-start gap-4">
         <div className="text-primary font-bold text-lg border min-w-60 text-center rounded-full p-2 px-4 shadow-indigo-500/50 shadow-xl/30">
           Full Stack Developer
         </div>
@@ -25,7 +25,7 @@ export default function Hero() {
         </div>
         <div className="mt-6 flex flex-col lg:flex-row gap-6">
           <Link
-            className="flex items-center justify-center gap-2 bg-primary text-primary-foreground rounded-full font-medium min-w-45"
+            className="flex items-center justify-center gap-2 bg-primary text-primary-foreground rounded-full font-medium min-w-45 py-4"
             href="/projects"
           >
             View My Work
@@ -46,31 +46,31 @@ export default function Hero() {
         <div className="w-full flex lg:justify-start justify-center mt-6 mb-2">
           <Link
             className="border rounded-lg border-primary m-2 p-3"
-            href="/about"
+            href="https://github.com/DixonKH" 
           >
             <Github />
           </Link>
           <Link
             className="border rounded-lg border-primary m-2 p-3"
-            href="/about"
+            href="tme:@NeonCoding"
           >
             <Send />
           </Link>
           <Link
             className="border rounded-lg border-primary m-2 p-3"
-            href="/about"
+            href="www.linkedin.com/in/dilshod-khaydarov-380260200"
           >
             <Linkedin />
           </Link>
           <Link
             className="border rounded-lg border-primary m-2 p-3"
-            href="/about"
+            href="mailto:Khaydarovdilshod9@gmail.com"
           >
             <Mail />
           </Link>
         </div>
       </div>
-      <div className="w-1/2 mt-10 lg:mt-0 flex justify-center items-center">
+      <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center items-center">
         <div className="min-w-100 border border-primary px-8 py-14 flex flex-col gap-6 rounded-2xl backdrop-blur-3xl ">
           <div className="w-70 h-50 border-2 rounded-full blur-3xl bg-indigo-500 absolute -z-99 ml-14"></div>
           <div>

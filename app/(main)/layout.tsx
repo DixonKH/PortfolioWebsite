@@ -28,16 +28,16 @@ export default function MainLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased w-full flex flex-col justify-center`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
           <header>
-          <Navbar />
-        </header>
-        <main>{children}</main>
-        <footer>
-          <Footer />
-        </footer>
+            <Navbar />
+          </header>
+          <main className=" w-full flex flex-col items-center">{children}</main>
+          <footer>
+            <Footer />
+          </footer>
         </Providers>
       </body>
     </html>

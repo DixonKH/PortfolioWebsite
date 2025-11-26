@@ -7,7 +7,7 @@ import Hero from "./hero/page";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-20 justify-center items-center w-full px-20 mt-16">
+    <div className="flex flex-col gap-20 items-center w-full px-20 mt-44">
       <Hero />
       <About />
       <Skills />
