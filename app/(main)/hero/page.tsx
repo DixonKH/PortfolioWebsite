@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="w-full flex flex-col lg:flex-row justify-between items-center">
+    <div className="w-full flex flex-col lg:flex-row justify-between items-center mt-45">
       <div className="lg:w-1/2 flex flex-col justify-between items-center lg:items-start gap-4">
         <div className="text-primary font-bold text-lg border min-w-60 text-center rounded-full p-2 px-4 shadow-indigo-500/50 shadow-xl/30">
           Full Stack Developer

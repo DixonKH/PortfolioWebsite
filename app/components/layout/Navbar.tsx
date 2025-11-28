@@ -6,11 +6,11 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const NavLinks = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Skills", href: "/skills" },
-  { name: "Projects", href: "/projects" },
-  { name: "Experiance", href: "/experiance" },
+  { name: "Home", href: "#hero" },
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+  { name: "Experiance", href: "#experiance" },
 ];
 
 export default function Navbar() {
@@ -22,14 +22,14 @@ export default function Navbar() {
         <span className="p-2 mask-l-from-40% mr-2 px-3.5 bg-primary text-white font-bold text-2xl rounded-md">
           N
         </span>
-        <Link href="/">NeonCoding</Link>
+        <Link href="#hero">NeonCoding</Link>
       </div>
       <nav className="flex items-center lg:text-xl gap-4">
         <div className="hidden lg:flex space-x-6 lg:text-lg md:text-sm font-medium">
           {NavLinks.map((link) => {
             const isActive =
               pathname === link.href ||
-              (pathname.startsWith(link.href) && link.href !== "/");
+              (pathname.startsWith(link.href) && link.href !== "#");
             return (
               <Link
                 key={link.name}
@@ -45,7 +45,7 @@ export default function Navbar() {
         </div>
         <ToggleTheme />
         <div className="hidden lg:flex bg-primary text-primary-foreground rounded-full font-medium px-5 py-2">
-          <Link href="/contact">Contact</Link>
+          <Link href="#contact">Contact</Link>
         </div>
         <button className="flex lg:hidden" onClick={() => setIsOpen(true)}>
           {isOpen ? <X /> : <Menu />}
@@ -57,7 +57,7 @@ export default function Navbar() {
           {NavLinks.map((link) => {
             const isActive =
               pathname === link.href ||
-              (pathname.startsWith(link.href) && link.href !== "/");
+              (pathname.startsWith(link.href) && link.href !== "#");
             return (
               <Link
                 key={link.name}
@@ -74,7 +74,7 @@ export default function Navbar() {
           <div>
             <Link
               className="bg-primary text-primary-foreground text-xl rounded-full font-medium px-6 py-3"
-              href="/contact"
+              href="#contact"
             >
               Contact
             </Link>
@@ -83,7 +83,7 @@ export default function Navbar() {
             <span className="p-2 mask-l-from-40% mr-2 px-3.5 bg-primary text-white font-bold lg:text-2xl  rounded-md">
               N
             </span>
-            <Link href="/">NeonCoding</Link>
+            <Link href="#hero">NeonCoding</Link>
           </div>
           <button
             className="absolute top-8 right-8 text-3xl"

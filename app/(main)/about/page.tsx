@@ -2,7 +2,7 @@ import { CodeXml, Users, Rocket, Lightbulb } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="w-full mt-20 flex flex-col justify-center items-center gap-10">
+    <div className="w-full mt-30 flex flex-col justify-center items-center gap-10">
       <div className="w-full flex flex-col justify-between items-center gap-4">
         <div className="text-lg font-bold text-primary">About Me</div>
         <div className="text-5xl font-bold text-center">Who I am</div>
@@ -48,7 +48,7 @@ export default function About() {
                   designers and stakeholders.
                 </div>
               </div>
-            </div>
+            </div> 
           </div>
         </div>
         <div className="lg:w-1/2">

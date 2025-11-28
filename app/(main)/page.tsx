@@ -7,13 +7,25 @@ import Hero from "./hero/page";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-20 items-center w-full px-20 mt-44">
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experiance />
-      <Contact />
+    <div className="flex flex-col gap-20 items-center w-full px-20">
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="experiance">
+        <Experiance />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 }
