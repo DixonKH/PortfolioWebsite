@@ -7,7 +7,7 @@ import Hero from "./hero/page";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-20 items-center w-full px-20">
+    <div className="flex flex-col gap-20 w-full px-5 md:px-10 lg:px-20">
       <section id="hero">
         <Hero />
       </section>

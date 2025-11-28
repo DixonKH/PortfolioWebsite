@@ -2,15 +2,15 @@ import { CodeXml, Users, Rocket, Lightbulb } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="w-full mt-30 flex flex-col justify-center items-center gap-10">
+    <div className="w-full mt-30 flex flex-col justify-center items-center">
       <div className="w-full flex flex-col justify-between items-center gap-4">
-        <div className="text-lg font-bold text-primary">About Me</div>
+        <div className="text-sm font-bold text-primary uppercase text-center">About Me</div>
         <div className="text-5xl font-bold text-center">Who I am</div>
         <div className="dark:text-gray-400 text-lg mt-2 text-center">
           Passionate about creating seamless digital experiences
         </div>
       </div>
-      <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10 mt-10">
+      <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10">
         <div className="lg:w-1/2">
           <div className="border border-primary min-w-85 px-6 py-14 flex flex-col gap-6 rounded-2xl dark:bg-indigo-900/10 shadow-indigo-500/50 shadow-xl/40">
             <div className="flex md:flex-row flex-col justify-center items-start gap-3">

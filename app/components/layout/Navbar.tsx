@@ -14,7 +14,7 @@ const NavLinks = [
 ];
 
 export default function Navbar() {
-  const pathname = usePathname();
+ // const [activeSection, setActiveSection] = useState("hero");
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <div className="dark:bg-black bg-white fixed top-0 right-0 left-0 z-999 w-full p-8 flex justify-between items-center shadow-md lg:px-24 py-6">
@@ -27,16 +27,10 @@ export default function Navbar() {
       <nav className="flex items-center lg:text-xl gap-4">
         <div className="hidden lg:flex space-x-6 lg:text-lg md:text-sm font-medium">
           {NavLinks.map((link) => {
-            const isActive =
-              pathname === link.href ||
-              (pathname.startsWith(link.href) && link.href !== "#");
             return (
               <Link
                 key={link.name}
                 href={link.href}
-                className={
-                  isActive ? "font-bold text-primary" : ""
-                }
               >
                 {link.name}
               </Link>
@@ -55,16 +49,10 @@ export default function Navbar() {
       {isOpen && (
         <div className="fixed inset-0 bg-background bg-opacity-95 z-50 flex flex-col items-center justify-center space-y-8">
           {NavLinks.map((link) => {
-            const isActive =
-              pathname === link.href ||
-              (pathname.startsWith(link.href) && link.href !== "#");
             return (
               <Link
                 key={link.name}
                 href={link.href}
-                className={
-                  isActive ? "font-bold text-primary" : ""
-                }
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}

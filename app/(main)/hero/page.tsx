@@ -11,12 +11,12 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="w-full flex flex-col lg:flex-row justify-between items-center mt-45">
+    <div className="w-full flex flex-col lg:flex-row justify-between items-center mt-40">
       <div className="lg:w-1/2 flex flex-col justify-between items-center lg:items-start gap-4">
         <div className="text-primary font-bold text-lg border min-w-60 text-center rounded-full p-2 px-4 shadow-indigo-500/50 shadow-xl/30">
           Full Stack Developer
         </div>
-        <div className="md:text-6xl text-4xl font-bold max-w-3xl text-center lg:text-left">
+        <div className="md:text-7xl text-4xl font-bold max-w-3xl text-center lg:text-left">
           Building Digital <span className="text-primary">Experiences</span>
         </div>
         <div className="md:text-xl text-md max-w-2xl min-w-80 dark:text-gray-400 text-center lg:text-left mt-5">
