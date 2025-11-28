@@ -81,19 +81,19 @@ export default function SkillsPage() {
               {s.icon}
             </div>
             <div className="text-2xl font-bold mt-2">{s.category}</div>
-            <div className="w-full flex justify-between items-center text-lg">
+            <div className="w-full flex justify-between items-center">
               <div>{s.skills[0].name}</div>
               <div className="text-primary font-bold">{s.skills[0].level}</div>
             </div>
-            <div className="w-full flex justify-between items-center text-lg">
+            <div className="w-full flex justify-between items-center">
               <div>{s.skills[1].name}</div>
               <div className="text-primary font-bold">{s.skills[1].level}</div>
             </div>
-            <div className="w-full flex justify-between items-center text-lg">
+            <div className="w-full flex justify-between items-center">
               <div>{s.skills[2].name}</div>
               <div className="text-primary font-bold">{s.skills[2].level}</div>
             </div>
-            <div className="w-full flex justify-between items-center text-lg">
+            <div className="w-full flex justify-between items-center">
               <div>{s.skills[3].name}</div>
               <div className="text-primary font-bold">{s.skills[3].level}</div>
             </div>
