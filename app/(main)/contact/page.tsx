@@ -16,7 +16,7 @@ export default function Contact() {
                </div>
              </div>
              <div className="w-full flex justify-center items-center">
-                <div className="w-8/12 border flex flex-col justify-center items-center gap-6 border-gray-800 rounded-lg p-12 shadow-lg bg-white dark:bg-gray-900/10">
+                <div className="lg:w-8/12 w-full border flex flex-col justify-center items-center gap-6 border-gray-800 rounded-lg p-2 lg:p-12 shadow-lg bg-white dark:bg-gray-900/10">
                     <form className="flex flex-col gap-6 w-full">
                         <div className="flex md:flex-row flex-col w-full justify-between gap-4">
                             <input 
