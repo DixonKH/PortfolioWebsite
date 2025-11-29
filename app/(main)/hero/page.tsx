@@ -35,7 +35,7 @@ export default function Hero() {
           </Link>
           <Link
             className="flex items-center justify-center dark:bg-gray-900 gap-2 border rounded-full font-medium min-w-50 py-4 shadow-indigo-500/50 shadow-xl/30"
-            href="/contact"
+            href="#contact"
           >
             Contact Me
             <span>

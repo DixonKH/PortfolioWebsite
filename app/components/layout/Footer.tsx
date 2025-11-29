@@ -23,13 +23,13 @@ export default function Footer() {
           </div>
           <div className="w-full flex lg:justify-start justify-center mt-2">
             <div className="border rounded-lg border-primary m-2 p-3">
-              <Link href="/contact"><Github /></Link>
+              <Link href="https://github.com/DixonKH"><Github /></Link>
             </div>
             <div className="border rounded-lg border-primary m-2 p-3">
-              <Link href="/about"><Linkedin /></Link>
+              <Link href="#about"><Linkedin /></Link>
             </div>
             <div className="border rounded-lg border-primary m-2 p-3">
-              <Link href="/projects"><Send /></Link>
+              <Link href="tme:@NeonCoding"><Send /></Link>
             </div>
           </div>
         </div>
