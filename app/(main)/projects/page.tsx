@@ -1,13 +1,18 @@
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa6";
+import EduSmart from "../../../public/EduSmart.png"
+import Image from "next/image";
+
 const projectLists = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Education Platform",
     technologies: ["React", "Node.js", "MongoDB"],
     description:
-      "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-    image: "/project1.jpg",
-    link: "https://example.com/project1",
-    githubLink: "https://github.com/username/project1",
+      "Full-stack education platform solution with course integration, inventory management, and admin dashboard.",
+    image: EduSmart,
+    link: "https://edu-smart-xi.vercel.app",
+    githubLink: "https://github.com/DixonKH/edu-smart",
   },
   {
     id: 2,
@@ -48,12 +53,14 @@ export default function Projects() {
           return (
             <div
               key={project.id}
-              className="w-full max-w-md shadow-md overflow-hidden hover:border-primary border rounded-2xl shadow-indigo-500/50 shadow-xl/30"
+              className="w-full max-w-md shadow-md cursor-pointer overflow-hidden hover:border-primary border rounded-2xl shadow-indigo-500/50 shadow-xl/30"
             >
-              <img
-                className="w-full h-48 object-cover"
+              <Image
+                className="w-full h-48 object-cover hover:scale-105 transition-all duration-300"
                 src={project.image}
                 alt={project.title}
+                width={364}
+                height={192}
               />
               <div className="p-6">
                 <div className="mb-4">
@@ -73,22 +80,22 @@ export default function Projects() {
                   {project.description}
                 </p>
                 <div className="w-full flex justify-between items-center">
-                  <a
+                  <Link
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary font-semibold hover:underline"
+                    className="text-primary font-semibold"
                   >
                     Live Demo
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary font-semibold hover:underline"
+                    className="text-gray-500 font-semibold"
                   >
-                    GitHub Repo
-                  </a>
+                    GitHub Repo <FaGithub className="inline ml-1" />
+                  </Link>
                 </div>
               </div>
             </div>
