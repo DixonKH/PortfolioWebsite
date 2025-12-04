@@ -27,6 +27,9 @@ export default function MainLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/logofav.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

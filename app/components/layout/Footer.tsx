@@ -52,7 +52,7 @@ export default function Footer() {
             </div>
         </div>
       </div>
-      <div className="flex justify-center items-center w-full border-t-gray-600 border-t py-6 mt-10 text-gray-500">2024 NeonCoding. All Rights Reserved!</div>
+      <div className="flex justify-center text-center items-center w-full border-t-gray-600 border-t py-6 mt-10 text-gray-500">2024 NeonCoding. All Rights Reserved!</div>
     </div>
   );
 }
