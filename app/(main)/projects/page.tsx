@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
 import EduSmart from "../../../public/EduSmart.png"
+import ToDoApp from "../../../public/todo.png"
 import Image from "next/image";
 
 const projectLists = [
@@ -16,13 +17,13 @@ const projectLists = [
   },
   {
     id: 2,
-    title: "Social Media App",
-    technologies: ["React Native", "Expo", "MongoDB"],
+    title: "ToDo App",
+    technologies: ["Nextjs", "Prisma", "MongoDB"],
     description:
-      "Mobile-first social networking application with real-time messaging, posts, and user interactions.",
-    image: "/project2.jpg",
-    link: "https://example.com/project2",
-    githubLink: "https://github.com/username/project2",
+      "Simple ToDo app with task management, and priority CRUD operations. It also resonsive for mobile devices.",
+    image: ToDoApp,
+    link: "https://todo-app-five-rho-39.vercel.app",
+    githubLink: "https://github.com/DixonKH/todoApp",
   },
   {
     id: 3,
