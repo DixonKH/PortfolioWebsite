@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { signIn } from "next-auth/react";
 
 export default function LoginClient() {
@@ -15,6 +15,11 @@ export default function LoginClient() {
           <button onClick={() => signIn("github", { callbackUrl: "/" })}>
             <button className="w-full py-4 bg-gray-800 text-white rounded-lg font-medium hover:bg-black">
               GitHub bilan kirish
+            </button>
+          </button>
+          <button onClick={() => signIn("kakao", { callbackUrl: "/" })}>
+            <button className="w-full py-4 bg-gray-800 text-white rounded-lg font-medium hover:bg-black">
+              KakaoTalk bilan kirish
             </button>
           </button>
         </div>
