@@ -6,8 +6,8 @@ import prisma from "@/lib/prisma"
 import Image from "next/image"
 import { FiLogOut, FiUsers, FiShield } from "react-icons/fi"
 import { SiKakao } from "react-icons/si"
-import "../../globals.css"
 import Link from "next/link"
+import "../../globals.css"
 
 export default async function AdminPanel() {
   const session = await getServerSession(authOptions)
