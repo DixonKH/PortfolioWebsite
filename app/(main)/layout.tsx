@@ -4,6 +4,8 @@ import "../globals.css";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import Providers from "../providers";
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { getServerSession } from "next-auth";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,11 +22,13 @@ export const metadata: Metadata = {
   description: "Next.js 14 + Typescript + Tailwind",
 };
 
-export default function MainLayout({
+export default async function MainLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const session = await getServerSession(authOptions);
+  console.log("session main", session);
   return (
     <html lang="en">
       <head>
@@ -34,9 +38,7 @@ export default function MainLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <header>
-            <Navbar />
-          </header>
+          <Navbar session={session}  />
           <main className=" w-full flex flex-col items-center">{children}</main>
           <footer>
             <Footer />

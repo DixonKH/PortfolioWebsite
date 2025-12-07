@@ -1,19 +1,23 @@
 "use client";
 import Link from "next/link";
 import ToggleTheme from "../common/ToggleTheme/page";
-import React, { useState } from "react";
+import  { use, useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
+import UserDropdown from "../common/UserDropdown";
+
 const NavLinks = [
   { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Experiance", href: "#experiance" },
+  { name: "Contact", href: "#contact" },
 ];
 
-export default function Navbar() {
- // const [activeSection, setActiveSection] = useState("hero");
-  const [isOpen, setIsOpen] = React.useState(false);
+export default function Navbar({session}: {session: any}) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="dark:bg-black bg-white fixed top-0 right-0 left-0 z-999 w-full p-8 flex justify-between items-center shadow-md lg:px-24 py-5 lg:py-6">
       <div className="text-primary lg:text-2xl text-xl font-bold flex items-center">
@@ -36,9 +40,14 @@ export default function Navbar() {
           })}
         </div>
         <ToggleTheme />
-        <div className="hidden lg:flex bg-primary text-primary-foreground rounded-full font-medium px-5 py-2">
-          <Link href="#contact">Contact</Link>
-        </div>
+        {session ? (
+         <UserDropdown session={session} />
+        ) : (
+          <Link href="/login" className="bg-primary text-primary-foreground rounded-full font-medium px-5 py-2">
+            Login
+          </Link>
+        )}
+        {/* Mobile Menu Button */}
         <button className="flex lg:hidden" onClick={() => setIsOpen(true)}>
           {isOpen ? <X /> : <Menu />}
         </button>
@@ -57,14 +66,6 @@ export default function Navbar() {
               </Link>
             );
           })}
-          <div>
-            <Link
-              className="bg-primary text-primary-foreground text-xl rounded-full font-medium px-6 py-3"
-              href="#contact"
-            >
-              Contact
-            </Link>
-          </div>
           <div className="text-primary lg:text-3xl text-2xl font-bold flex items-center absolute top-8 left-8">
             <span className="p-2 mask-l-from-40% mr-2 px-3.5 bg-primary text-white font-bold lg:text-2xl  rounded-md">
               N
