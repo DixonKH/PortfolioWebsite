@@ -17,8 +17,8 @@ export default function UserDropdown({session}: {session: any}) {
           <Image
             src={session.user.image}
             alt="Avatar"
-            width={40}
-            height={40}
+            width={34}
+            height={34}
             className="rounded-full ring-2 ring-primary shadow-lg"
           />
         ) : (

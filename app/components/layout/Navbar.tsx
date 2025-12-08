@@ -19,12 +19,12 @@ export default function Navbar({session}: {session: any}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="dark:bg-black bg-white fixed top-0 right-0 left-0 z-999 w-full p-8 flex justify-between items-center shadow-md lg:px-24 py-5 lg:py-6">
+    <div className="dark:bg-black/10 bg-white/10 backdrop-blur-2xl fixed top-0 right-0 left-0 z-999 w-full p-8 flex justify-between items-center shadow-md lg:px-24 py-5 lg:py-6">
       <div className="text-primary lg:text-2xl text-xl font-bold flex items-center">
         <span className="p-2 mask-l-from-40% mr-2 px-3.5 bg-primary text-white font-bold text-xl lg:text-2xl rounded-md">
           N
         </span>
-        <Link href="#hero">NeonCoding</Link>
+        <Link className="hidden md:block" href="#hero">NeonCoding</Link>
       </div>
       <nav className="flex items-center lg:text-xl gap-4">
         <div className="hidden lg:flex space-x-6 lg:text-lg md:text-sm font-medium">
@@ -43,7 +43,7 @@ export default function Navbar({session}: {session: any}) {
         {session ? (
          <UserDropdown session={session} />
         ) : (
-          <Link href="/login" className="bg-primary text-primary-foreground rounded-full font-medium px-5 py-2">
+          <Link href="/login" className="bg-primary text-primary-foreground text-lg rounded-full font-medium px-5 py-2">
             Login
           </Link>
         )}
@@ -54,10 +54,11 @@ export default function Navbar({session}: {session: any}) {
       </nav>
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="fixed inset-0 bg-background bg-opacity-95 z-50 flex flex-col items-center justify-center space-y-8">
+        <div className="fixed inset-0 pt-24 bg-primary text-white h-110 w-full z-50 flex flex-col items-center justify-start space-y-8 rounded-b-4xl">
           {NavLinks.map((link) => {
             return (
               <Link
+              className="hover:shadow-2xl transition-all duration-300 hover:scale-115"
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
@@ -70,7 +71,6 @@ export default function Navbar({session}: {session: any}) {
             <span className="p-2 mask-l-from-40% mr-2 px-3.5 bg-primary text-white font-bold lg:text-2xl  rounded-md">
               N
             </span>
-            <Link href="#hero">NeonCoding</Link>
           </div>
           <button
             className="absolute top-8 right-8 text-3xl"

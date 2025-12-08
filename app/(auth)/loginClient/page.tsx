@@ -3,6 +3,7 @@ import { signIn } from "next-auth/react";
 import { useState } from "react";
 import { FcGoogle } from "react-icons/fc"
 import { SiGithub, SiKakao } from "react-icons/si"
+import { RiKakaoTalkFill } from "react-icons/ri";
 import "../../globals.css";
 
 export default function LoginClient() {
@@ -38,7 +39,7 @@ export default function LoginClient() {
               className="group w-full cursor-pointer flex items-center justify-center gap-4 bg-white text-gray-800 py-5 px-6 rounded-2xl font-semibold text-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 disabled:opacity-70"
             >
               <FcGoogle size={28} />
-              <span>Google bilan davom etish</span>
+              <span>Google</span>
               {loading === "google" && <span className="animate-spin">↻</span>}
             </button>
 
@@ -48,8 +49,8 @@ export default function LoginClient() {
               disabled={loading === "kakao"}
               className="group w-full flex cursor-pointer items-center justify-center gap-4 bg-[#FEE500] text-[#371D1E] py-5 px-6 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 disabled:opacity-70"
             >
-              <SiKakao size={28} />
-              <span>Kakao bilan davom etish</span>
+              <RiKakaoTalkFill size={28} />
+              <span>Kakao</span>
               {loading === "kakao" && <span className="animate-spin">↻</span>}
             </button>
 
@@ -60,14 +61,14 @@ export default function LoginClient() {
               className="group w-full flex cursor-pointer items-center justify-center gap-4 bg-gray-900 text-white py-5 px-6 rounded-2xl font-semibold text-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 disabled:opacity-70"
             >
               <SiGithub size={28} />
-              <span>GitHub bilan davom etish</span>
+              <span>GitHub</span>
               {loading === "github" && <span className="animate-spin">↻</span>}
             </button>
           </div>
 
           {/* Footer */}
           <p className="text-center text-gray-400 text-sm mt-10">
-            © 2025 Dixon — Full-Stack Developer
+            © 2024 Dixon — Full-Stack Developer
           </p>
         </div>
       </div>
