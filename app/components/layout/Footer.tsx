@@ -8,7 +8,7 @@ import { MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <div className="w-full flex flex-col justify-center items-center px-18 py-12 border-t border-gray-600 dark:bg-black">
+    <div className="w-full flex flex-col justify-center items-center px-18 py-12 border-t rounded-t-4xl border-gray-600 dark:bg-black">
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start items-center w-full lg:max-w-8xl px-8">
         <div className="flex flex-col gap-4 items-center lg:items-start justify-center mb-6 lg:mb-0">
           <div className="text-primary text-2xl font-bold flex items-center space-x-2">
@@ -36,11 +36,11 @@ export default function Footer() {
         <div className="flex flex-col gap-4 items-center justify-center lg:mt-0 mt-4">
             <div className="text-xl font-medium">Quick Links</div>
             <div className="flex flex-col lg:items-start items-center justify-center gap-3 text-md">
-                <div className="hover:text-xl transition-all hover:text-primary"><Link href="/">Home</Link></div>
-                <div className="hover:text-xl transition-all hover:text-primary"><Link href="/about">About</Link></div>
-                <div className="hover:text-xl transition-all hover:text-primary"><Link href="/skills">Skills</Link></div>
-                <div className="hover:text-xl transition-all hover:text-primary"><Link href="/projects">Projects</Link></div>
-                <div className="hover:text-xl transition-all hover:text-primary"><Link href="/experiance">Experiance</Link></div>
+                <div className="hover:text-xl transition-all hover:text-primary"><Link href="#hero">Home</Link></div>
+                <div className="hover:text-xl transition-all hover:text-primary"><Link href="#about">About</Link></div>
+                <div className="hover:text-xl transition-all hover:text-primary"><Link href="#skills">Skills</Link></div>
+                <div className="hover:text-xl transition-all hover:text-primary"><Link href="#projects">Projects</Link></div>
+                <div className="hover:text-xl transition-all hover:text-primary"><Link href="#experiance">Experiance</Link></div>
             </div>
         </div>
         <div className="flex flex-col gap-4 lg:items-start items-center justify-center lg:mt-0 mt-10">

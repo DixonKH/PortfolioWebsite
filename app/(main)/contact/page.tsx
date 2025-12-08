@@ -16,7 +16,7 @@ export default function Contact() {
                </div>
              </div>
              <div className="w-full flex justify-center items-center">
-                <div className="lg:w-8/12 w-full border flex flex-col justify-center items-center gap-6 border-gray-800 rounded-lg p-2 lg:p-12 shadow-lg bg-white dark:bg-gray-900/10">
+                <div className="lg:w-8/12 w-full border flex flex-col justify-center items-center gap-6 border-primary rounded-lg p-2 lg:p-12 shadow-lg bg-white dark:bg-gray-900/10">
                     <form className="flex flex-col gap-6 w-full">
                         <div className="flex md:flex-row flex-col w-full justify-between gap-4">
                             <input 
@@ -46,7 +46,7 @@ export default function Contact() {
                             Send Message
                         </button>
                     </form>
-                    <div className="border border-gray-800 w-full"></div>
+                    <div className="border border-primary w-full"></div>
                     <div className="flex md:flex-row flex-col justify-between items-center w-full mt-4 gap-6">
                         <div className="flex w-full md:w-1/3 flex-col gap-2 items-center">
                             <div className="flex justify-center items-center border rounded-lg text-primary border-primary w-12 h-12"><MdEmail size={22} /></div>

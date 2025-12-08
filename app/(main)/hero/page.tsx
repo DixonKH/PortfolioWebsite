@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="mt-6 flex flex-col lg:flex-row gap-6">
           <Link
             className="flex items-center justify-center gap-2 bg-primary text-primary-foreground rounded-full font-medium min-w-45 py-4"
-            href="/projects"
+            href="#projects"
           >
             View My Work
             <span>
@@ -71,7 +71,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-center items-center">
-        <div className="min-w-100 border border-primary px-8 py-14 flex flex-col gap-6 rounded-2xl backdrop-blur-3xl ">
+        <div className="min-w-100 border border-primary dark:bg-black/10 px-8 py-14 flex flex-col gap-6 rounded-2xl backdrop-blur-2xl">
           <div className="w-70 h-50 border-2 rounded-full blur-3xl bg-indigo-500 absolute -z-99 ml-14"></div>
           <div>
             <Image
@@ -81,11 +81,11 @@ export default function Hero() {
             />
           </div>
           <div className="w-full flex justify-between mt-4 text-xl font-medium gap-6">
-            <div className="w-1/2 h-30 border border-primary rounded-2xl p-4">
+            <div className="w-1/2 h-30 border border-primary rounded-2xl p-4 dark:bg-black/10 backdrop-blur-2xl">
                 <div className="flex justify-between items-center text-lg text-gray-500">Projects<span className="text-primary"><CodeXml size={26} /></span></div>
                 <div className="text-4xl font-black mt-2">20+</div>
             </div>
-            <div className="w-1/2 h-30 border border-primary rounded-2xl p-4">
+            <div className="w-1/2 h-30 border border-primary rounded-2xl p-4 dark:bg-black/10 backdrop-blur-2xl">
                 <div className="flex justify-between items-center text-lg text-gray-500">Cliets<span className="text-primary"><Users size={24} /></span></div>
                 <div className="text-4xl font-black mt-2">10+</div>
             </div>

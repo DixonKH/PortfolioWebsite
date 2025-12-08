@@ -11,10 +11,10 @@ export default function About() {
         </div>
       </div>
       <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-10">
-        <div className="lg:w-1/2">
-          <div className="border border-primary min-w-85 px-6 py-14 flex flex-col gap-6 rounded-2xl dark:bg-indigo-900/10 shadow-indigo-500/50 shadow-xl/40">
-            <div className="flex md:flex-row flex-col justify-center items-start gap-3">
-              <div className="font-bold flex justify-center items-center text-primary border p-4 rounded-2xl border-primary bg-gray-900">
+        <div className="lg:w-1/2 ">
+          <div className="border dark:bg-black/10 backdrop-blur-2xl border-primary min-w-85 px-6 py-14 flex flex-col gap-6 rounded-2xl shadow-indigo-500/50 shadow-xl/40">
+            <div className="flex md:flex-row flex-col justify-start items-start gap-3">
+              <div className="font-bold flex justify-center items-center text-primary border p-4 rounded-2xl border-primary dark:bg-gray-900">
                 <Rocket />
               </div>
               <div className="flex flex-col justify-center gap-2">
@@ -25,8 +25,8 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col justify-center items-start gap-3">
-              <div className="font-bold flex justify-center items-center text-primary border p-4 rounded-2xl border-primary bg-gray-900">
+            <div className="flex md:flex-row flex-col justify-start items-start gap-3">
+              <div className="font-bold flex justify-center items-center text-primary border p-4 rounded-2xl border-primary dark:bg-gray-900">
                 <Lightbulb />
               </div>
               <div className="flex flex-col justify-center gap-2">
@@ -37,8 +37,8 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col justify-center items-start gap-3">
-              <div className="font-bold flex justify-center items-center text-primary border p-4 rounded-2xl border-primary bg-gray-900">
+            <div className="flex md:flex-row flex-col justify-start items-start gap-3">
+              <div className="font-bold flex justify-center items-center text-primary border p-4 rounded-2xl border-primary dark:bg-gray-900">
                 <Rocket />
               </div>
               <div className="flex flex-col justify-center gap-2">
@@ -67,8 +67,8 @@ export default function About() {
                 end-to-end.
               </div>
             </div>
-            <div className="w-full grid lg:grid-cols-2 mt-4 font-medium gap-6">
-              <div className=" h-30 border border-primary rounded-2xl py-4 px-6 shadow-indigo-500/50 shadow-xl/30 flex flex-col justify-center items-start gap-2">
+            <div className="w-full grid md:grid-cols-2 grid-cols-1 mt-4 font-medium gap-6">
+              <div className="h-30 border border-primary rounded-2xl py-4 px-6 shadow-indigo-500/50 shadow-xl/30 flex flex-col justify-center items-start gap-2">
                 <div className="text-4xl font-bold text-primary">3+</div>
                 <div className="text-lg dark:text-gray-400">Year Experience</div>
               </div>
